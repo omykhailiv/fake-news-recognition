@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake news recognition</title>
+    <link rel="stylesheet" href="../../static/main_page/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<main>
+    <form method="post">
+    <div class="input-container">
+        <input type="text" id="news-input-area" name="news-input-area" class="input"
+               placeholder="Type in your news title" required>
+    </div>
+        <div class="loader" id = 'loader'></div>
+    <div class="button-container">
+        <button type="submit" id="news-check-button" class="button">Predict</button>
+    </div>
+        </form>
+</main>
+<footer>
+    <div class="footer">
+        <p>Remember not to trust anything, even if it is "100% real".</p>
+        <p>All the information about the model is <a href="https://huggingface.co/omykhailiv/bert-fake-news-recognition"
+                                                     target="_blank">here</a>. </p>
+    </div>
+</footer>
+<script src="../../static/main_page/script.js"></script>
+</body>
+</html>
