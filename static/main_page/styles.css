@@ -1,0 +1,132 @@
+body{
+    background: #1E1E1E;
+    margin: 0;
+    min-height: 600px;
+}
+
+main{
+    background: #1E1E1E;
+}
+
+.input-container{
+    display: flex;
+    margin: 0 auto;
+    padding: 20vh 0 5vh 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.input{
+    background: #D9D9D9;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100px;
+    padding: 20px;
+    width: 50vw;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.error{
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 100px;
+    color: #9C1A1C;
+    font-size: 20px;
+    width:40vw;
+    min-width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.results{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.button-container{
+    display: flex;
+    margin: 0 auto;
+    padding: 13vh 0 20vh 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.button{
+    background: #D9D9D9;
+    font-size: 25px;
+    padding: 10px;
+    width: 20vw;
+    min-width: 200px;
+    height: fit-content;
+    border-radius: 100px;
+}
+.button:hover{
+    background: #c0bebe;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #D9D9D9;
+    padding: 20px;
+    opacity: 90%;
+}
+
+a{
+    color: black;
+}
+
+p{
+    white-space: normal;
+    margin: 10px;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  display: none;
+  margin: 0 auto;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #D9D9D9   #0000;
+  animation: l1 1s infinite;
+}
+
+.loader-wrapper{
+    margin: 20px;
+}
+
+@keyframes l1 {to{transform: rotate(.5turn)}}
+
+@media screen and (max-width: 600px){
+    body{
+        padding: 10px;
+        min-height: 600px;
+    }
+
+    .input{
+        background: #D9D9D9;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 100px;
+        padding: 20px;
+        width: 40vw;
+        min-width: 280px;
+        margin: 0;
+    }
+
+    .button{
+        background: #D9D9D9;
+        font-size: 25px;
+        width: 30%;
+        min-width: 200px;
+        height: fit-content;
+        border-radius: 100px;
+    }
+}
