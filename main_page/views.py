@@ -47,6 +47,7 @@ def title_preprocess(text):
     # Convert text to lowercase for case-insensitive processing
     text = str(text).lower()
 
+
     # Remove HTML tags and their contents (e.g., "<tag>text</tag>")
     text = re.sub('<.*?>+\w+<.*?>', '', text)
 
